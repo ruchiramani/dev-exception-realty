@@ -14,8 +14,8 @@ selector {
 
    p { select all p} */
    p {
-   font-size: 1em;
-   line-height: 1.5em;
+   font-size: 15px;
+   line-height: 2px;
     }
 
     figcaption {
@@ -23,14 +23,14 @@ selector {
       font-size: 0.75em;
       line-height: 1.5em;
       font-family: Georgia, "New Times Roman", serif;*/
-      font: normal 075em/1.5em 'Clicker Script', cursive;
+      font: normal 15px/2px 'Clicker Script', cursive;
       color: #777;
       text-align: right;
 
     }
 
     .milk-text {
-      font: bold 2.6em 'Clicker Script', cursive;
+      font: bold 1em 'Clicker Script', cursive;
       color: white;
       text-shadow: 0.2px 3px #000;
     }
@@ -59,4 +59,58 @@ selector {
 #details a:hover {
   color:black 
   text-decoration: underline;
+}
+
+/*// Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.col-1 {
+  float: left;
+  width: 32%;
+  background-color: #ccc;
+}
+
+.col-2 {
+float: left;
+width: 66%;
+background-color: #ccc;
+}
+
+.col-3 {
+  background-color: #ccc;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+.first {
+  margin-left: 0%;
+}
+
+.clearfix after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+
+}
+ img, video, audio {
+  max-width: 100%;
+ }
+
+
+
+section{
+  padding: 20px;
 }
